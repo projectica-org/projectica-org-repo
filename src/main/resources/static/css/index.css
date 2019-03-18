@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&subset=cyrillic-ext,latin-ext');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type="text"], input[type="password"] {
+  font-size: 15px;
+  padding: 5px;
+  border: 0;
+  display: inline-block;
+  color: #6B6B68;
+  margin-bottom: 8px;
+}
+
+input[type="submit"], button[type="submit"] {
+  font-size: 15px;
+  background-color: #FF4D4D;
+  color: #fff;
+  border: 0;
+  padding: 2px 8px;
+}
+
+input[type="submit"]:hover, button[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #DB4242;
+}
+
+input[type="submit"]:disabled, button[type="submit"]:disabled {
+  cursor: default;
+  background-color: #FF4D4D;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+}
+
+.github {
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -90px;
+  background-image: url(../img/github-main.png);
+  background-size: cover;
+}
+
+.about {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: 50px;
+  padding: 20px;
+  background-image: url(../img/about-main.png);
+  background-size: cover;
+}
+
+.wrapper p {
+  text-transform: uppercase;
+  position:absolute;
+  top:50%;
+  left:0;
+  right:0;
+  margin-top: -0.625em;
+  text-align: center;
+}
+
+.wrapper > div {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+}
+
+.right {
+  left: 50%;
+}
+
+.wrapper > div > div {
+  font-size: 50px;
+  position: relative;
+  height: 50%;
+}
+
+.login {
+  background-color: #384467;
+}
+
+.signup {
+  background-color: #27BDCC;
+}
+
+.projects {
+  background-color: #FF6F6C;
+}
+
+.vacancies {
+  background-color: #4BE09C;
+}
+
+.wrapper>div>div:hover{
+  cursor: pointer;
+}
+
+.close {
+  display: inline-block;
+  float: right;
+  opacity: 1;
+  position: relative;
+  margin-left: 2px;
+  top: 10px;
+  background-image: url(../img/close-white.png);
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: 5px;
+  border-radius: 50%;
+  //border: 1px solid #B22F2F;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.close:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 1;
+  background-color: #B22F2F;
+  text-decoration: none;
+}
+
+.panel {
+  z-index: 15;
+}
+
+.panel-body {
+  background-color: #EFEFEF;
+  padding: 15px;
+}
+
+.panel-title {
+  background-color: #63B175;
+  height: 30px;
+  font-size: 20px;
+}
+
+.panel-title-big {
+  background-color: #384467;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+  color: #fff;
+  padding: 0 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title {
+  position: absolute;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #308042;
+  color: #fff;
+}
+
+.panel-title-big .add{
+  margin-top: 10px;
+}
+
+.panel-title>.close{
+  top: 0;
+  margin: 5px;
+}
+
+.log-in {
+  display: none;
+  position: fixed;
+  width: 310px;
+  left: 50%;
+  margin-left: -155px;
+  top: 50%;
+  margin-top: -96px;
+}
+
+.log-in .panel-body {
+  padding-right: 30px;
+}
+
+.log-in input[type="text"], .log-in input[type="password"] {
+  width: 100%;
+  font-size: 15px;
+  padding: 5px;
+  margin-bottom: 8px;
+  border: 0;
+}
+
+input[type=checkbox].css-checkbox {
+  position:absolute;
+  z-index:-1000;
+  left:-1000px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height:1px;
+  width:1px;
+  margin:-1px;
+  padding:0;
+  border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+  padding-left:19px;
+  height:13px;
+  display:inline-block;
+  line-height:13px;
+  background-repeat:no-repeat;
+  background-position: 0 0;
+  font-size:13px;
+  color: #6B6B68;
+  vertical-align:middle;
+  cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+	background-position: 0 -13px;
+}
+
+label.css-label {
+  margin-top: 13px;
+  background-image:url(../img/checkbox.png);
+}
+
+.log-in input[type="submit"] {
+  position: relative;
+  right: -10px;
+  bottom: 10px;
+  float: right;
+  color: #fff;
+  width: 90px;
+  height: 28px;
+}
+
+.log-in a {
+  font-size: 13px;
+  margin-top: 5px;
+  padding: 0px;
+  color: #6B6B68;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.log-in a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sign-up {
+  display: none;
+  position: fixed;
+  width: 310px;
+  left: 50%;
+  margin-left: -155px;
+  top: 50%;
+  margin-top: -131px;
+  background-color: #EFEFEF;
+  padding-bottom: 10px;
+}
+
+.sign-up .panel-body{
+  padding-right: 25px;
+}
+
+.sign-up form {
+}
+
+.sign-up input[type="text"], .sign-up input[type="password"] {
+  width: 100%;
+}
+
+.sign-up button[type="submit"] {
+  height: 28px;
+  width: 90px;
+  float: right;
+  margin-right: -10px;
+  margin-top: 2px;
+}
+
+.sign-up p{
+  color: #6B6B68;
+  width: 70%;
+  font-size: 15px;
+}
+
+.valid, .invalid {
+  position: absolute;
+  padding: 4px;
+  right: 26px;
+  border-radius: 50%;
+  margin-top: -26px;
+}
+
+.valid {
+  background-color: #63B175;
+}
+
+.invalid {
+  background-color: #B22F2F;
+}
+
+.reset-password {
+  display: none;
+  position: fixed;
+  width: 310px;
+  left: 50%;
+  margin-left: -155px;
+  top: 50%;
+  margin-top: -64px;
+}
+
+.reset-password .panel-body {
+  padding-right: 25px;
+}
+
+.reset-password input[type="text"] {
+  width: 100%;
+}
+
+.reset-password p{
+  text-align: center;
+}
+
+.bg_layer {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
